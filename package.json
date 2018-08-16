@@ -1,0 +1,11 @@
+{
+    "name": "botzera",
+    "version": "1.0.0",
+    "description": "cloudzera's bot",
+    "main": "bot.js",
+    "author": "cloudzera",
+    "dependecies": {},
+    "dependencies": {
+        "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6"
+    }
+}
