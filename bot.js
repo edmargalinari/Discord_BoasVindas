@@ -1,7 +1,7 @@
 const Discord = require('discord.io');
 
 const bot = new Discord.Client(({
-    token: "NDc5NjUxNTg5MTg4MjIyOTc4.DlcW3Q.xVt3SU2zxNufRFxsqoL2wR3Z7DA",
+    token: "TOKEN",
     autorun: true,
 }));
 
@@ -31,12 +31,8 @@ bot.on('message', (user, userID, channelID, message, evt) => {
         switch (cmd) {
         case 'help':
             mensagem =  `Comandos: \r\n` +
-                        `!afiliados = afiliados \r\n` +
-                        `!suporte = suporte`;
-            break;
-        case 'afiliados':
-            mensagem =  `Afiliados: \r\n` +
-                        `texto`;
+                        `!teste1 = teste1 \r\n` +
+                        `!teste2 = teste2`;
             break;
         case 'hello':
             mensagem = `Olá <@` + userID + `>`; 
