@@ -15,9 +15,17 @@ bot.on('ready', (evt) => {
 });
 
 bot.on('guildMemberAdd', function (guild, member) {
-    mensagem = `Seja muito bem-vindo ` + member.d.user.username;
-
-    enviarMensagem(member.d.user.id, mensagem);
+    mensagem1 = `Olá! Seja muito bem-vindo` + member.d.user.username;
+    mensagem2 = `Você acaba de se juntar ao Servidor World of Darkness - BR`
+    mensagem3 = `Você pode consultar as regras do Servidor no canal #regras.`
+    mensagem4 = `Qualquer solicitação também pode ser feita através de uma mensagem, mencionando o grupo de Administradores, digitando @Administradores.`
+    mensagem5 = `Esperamos que sua estada seja duradoura.`
+    
+    enviarMensagem(member.d.user.id, mensagem1);
+    enviarMensagem(member.d.user.id, mensagem2);
+    enviarMensagem(member.d.user.id, mensagem3);
+    enviarMensagem(member.d.user.id, mensagem4);
+    enviarMensagem(member.d.user.id, mensagem5);
 });
 
 bot.on('message', (user, userID, channelID, message, evt) => {
